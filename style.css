@@ -5,7 +5,6 @@
     --white:#ffffff;
     --black:#000000;
     --black-transparent:rgba(0,0,0,0.6)
-    
 
 }
 *{
@@ -17,7 +16,7 @@
     margin: 0 auto;
 }
 .header-2{
-    background-color: var(--primary-color);
+    background-color:rgba(233, 14, 14, 0.6);
 
 }
 .header-3{
@@ -106,7 +105,7 @@ margin-right: 6px;
 
 }
 .header-6 img{
-width: 1350px;
+width: 100%;
 }
 .header-5 li a:hover {
 background-color: var(--primary-color);
@@ -133,8 +132,8 @@ background-color: var(--primary-color);
 }
 .header-7{
     position: absolute;
-    top: 300px;
-    right: 360px;
+    top: 400px;
+    right: 340px;
     color: var(--white);
     
 }
@@ -216,14 +215,12 @@ background-color: var(--primary-color);
     
     font-size: xxx-large;
 }
-.header-1{
-    position: relative;
-}
+
 .menu-inner-wrapper{
     display: flex;
 }
 .menu-card{
-    display: flex;
+    
 }
 
 .menu-card{
@@ -244,20 +241,98 @@ width: 300px;
 }
 .overlay{
     position: absolute;
-    inset: 0;
     background-color:rgba(0,0,0,0.2);
-    margin: 12px;
+    display: block;
+    inset:0;
 
 }
 .menu-card img{
-    margin: 12px;
-    padding: 1px 1px;
+   
+width: 270px;
+
     
     
 }
 .menu-inner-wrapper img{
-    display:block;
+    margin: 26px;
+
 }
 .menu-inner-wrapper{
-    margin: 26px;
+    
+    
+}
+.overlay-inner{
+    position: absolute;
+
+    inset: 0;
+
+
+}
+.overlay-inner:hover{
+    background-color:rgb(0, 0, 0,0.8);
+    content: "view menu";
+    color: var(--white);
+    
+}
+.overlay-inner p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    
+    
+}
+.overlay-inner:hover p { 
+   color: var(--white);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   opacity: 90%;
+    
+}
+
+.border{
+    border: 3px solid var(--white);
+    position: absolute;
+    width: 98px;
+    height: 98px;
+    top: 18%;
+    left: 33%;
+    rotate: 45deg;
+    opacity: 0%;
+    
+    
+}
+.menu-card:hover .border{
+opacity: 90%;
+transition-duration:1s;
+transform: scale(1.2);
+}
+
+.menu-inner-wrapper .overlay{
+    width: 271px;
+    height: 154px;
+    left: 8%;
+    top: 12%;
+}
+.header-6{
+    position: relative;
+}
+.header-4{
+    position: absolute;
+    z-index: +1;
+    top: 47px;
+}
+.header-4{
+    width: 100%;
+}
+.header-6{
+position: relative;
+}
+.header-2{
+    position: absolute;
+    z-index: +1;
+    width: 100%;
 }
